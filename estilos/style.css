@@ -35,13 +35,13 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+    transform: translate(-50%, -50%);
     transition: width .5s, height .5s;
     transition-timing-function: ease;
 }
@@ -57,4 +57,85 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: var(--lilas);
+    border: 2px solid var(--lilas);
+    border-radius: 7px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #68e2de;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: calc(100% + 1px);
+    border: 0px;
+    border-radius: 7px;
+    padding: 4px;
+    transform: translateY(calc(-14px + 1px));
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #2b5e5c;
+}
+
+form > a.botao {
+    display: block;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color: #2b5e5c;
+    background-color: white;
+    border: 1px solid #49A09D;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #68e2de;
 }
